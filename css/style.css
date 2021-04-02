@@ -1,0 +1,1229 @@
+body {
+  font-family: 'Roboto Condensed', Impact, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  color: #242121;
+  background-color: #ffffff;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* .header-top { */
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a:focus, li:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #00B2A0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+button {
+  letter-spacing: inherit;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #01353E;
+}
+
+.title::after {
+  position: absolute;
+  content: '/';
+  font-size: 1.5em;
+  color: #00B2A0;
+}
+
+.button {
+  padding: 24px 91px;
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.button:hover {
+  color: #00B2A0;
+}
+
+.header {
+  position: relative;
+  background: center bottom / cover no-repeat;
+  height: 100vh;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.menu.shadowed {
+  background-color: rgb(125, 148, 161, 0.8);
+}
+
+.menu-inner {
+  display: flex;
+  padding: 50px 0 35px;
+}
+
+.menu-inner .logo {
+  position: absolute;
+  top: 35px;
+  width: 60px;
+  height: 63px;
+}
+
+.menu-inner nav {
+  margin: 0 auto;
+}
+
+.menu-button {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.menu-list a .menu-item-text {
+  padding: 0 2px 5px;
+  transition: border-color 0.2s;
+  border-bottom: 1px solid rgba(0, 178, 160, 0);
+}
+
+.menu-list li.active .menu-item-text,
+.menu-list li:hover .menu-item-text {
+  border-color: rgba(0, 178, 160, 1);
+}
+
+.menu-list li:not(:first-child) {
+  margin-left: 43px;
+}
+
+.menu-list a {
+  color: #ffffff;
+}
+
+/* Ты говорил убрать эту обертку. Я не стал ее обертку, потому что в этом был смысл расположения на странице элементов. Убирать говорил в другом контексте, что она вроде бы не нужна. */
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header .main-title {
+  margin: auto 0;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 200px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #0D302C;
+  text-align: center;
+}
+
+.header .info-text {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', Impact, sans-serif;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.header .icon {
+  width: 20px;
+  height: 69px;
+  margin: 0 auto 92px;
+  background-repeat: no-repeat;
+}
+
+.about {
+  padding-top: 189px;
+  padding-bottom: 160px;
+}
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about .content p {
+  width: 50%;
+  padding-right: 10%;
+}
+
+.profit {
+  padding: 200px 0 161px;
+  background-color: #F8F8F8;
+}
+
+.profit-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.profit-item {
+  width: 350px;
+}
+
+.profit-item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto 10px;
+  padding-left: 60px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.profit-item-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.profit-item-title.icon-1::before {
+  width: 55px;
+  background-image: url('../images/sea-icon.svg');
+}
+
+.profit-item-title.icon-2::before {
+  background-image: url('../images/plain-icon.svg');
+}
+
+.profit-item-title.icon-3::before {
+  background-image: url('../images/surfer-icon.svg');
+}
+
+.profit-item p {
+  margin-bottom: 0;
+}
+
+.profit-methodology {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profit-statistics-item {
+  margin-bottom: 12px;
+}
+
+.percentage {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.percentage::before {
+  content: '';
+  display: block;
+  height: 15px;
+  background-repeat: no-repeat;
+  margin: 0 10px 1px 0;
+}
+
+.second-time .percentage::before {
+  background-image: url('../images/wave-1.svg');
+  width: 200px;
+}
+
+.have-learned .percentage::before {
+  background-image: url('../images/wave-2.svg');
+  width: 247px;
+}
+
+.satisfied-clients .percentage::before {
+  background-image: url('../images/wave-3.svg');
+  width: 293px;
+}
+
+.profit-methodology .description {
+  width: 50%;
+}
+
+.profit-methodology .description p {
+  margin-bottom: 35px;
+}
+
+.achive {
+  padding: 200px 0 317px;
+  background: url('../images/surfing.jpg') no-repeat top right / 50%;
+}
+
+.achive .title {
+  text-align: left;
+}
+
+.achive-inner-text {
+  max-width: 507px;
+}
+
+.gallery-inner {
+  padding-bottom: 200px;
+}
+
+.gallery-inner .title {
+  margin-bottom: 205px;
+}
+
+.gallery-inner .filter {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.gallery-inner .filter-item button {
+  font-size: 24px;
+  line-height: 1;
+  color: inherit;
+  text-transform: uppercase;
+  border-width: 0;
+  background-color: unset;
+  font-weight: 400;
+  padding: 0;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.gallery-inner .filter-item .mixitup-control-active, .gallery-inner .filter-item button:hover {
+  color: #00B2A0;
+}
+
+.gallery-inner .filter-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.gallery-inner .gallery-items {
+  margin: 0 0 10px -40px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.gallery-inner .gallery-item {
+  max-height: 280px;
+  /* margin: 0 40px 40px 0; */
+  margin: 0 0 40px 40px;
+  display: block;
+  position: relative;
+  flex: none;
+  cursor: pointer;
+}
+
+.gallery-inner .gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.2s;
+  background-color: rgba(51, 51, 51, 0);
+}
+
+.gallery-inner .gallery-item:hover::before {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.gallery-inner .gallery-item a {
+  display: block;
+}
+
+.gallery-inner .show-more {
+  display: block;
+  margin: 0 auto;
+}
+
+.blockquote {
+  background-color: #F8F8F8;
+  padding: 80px 0;
+}
+
+.blockquote-text {
+  padding: 0 10px;
+  position: relative;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.blockquote-author {
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.video {
+  padding: 200px 0;
+}
+
+.video-preview {
+  position: relative;
+  display: block;
+  background: url('../images/video-preview.jpg') no-repeat center / cover;
+  min-height: 55.5vh;
+}
+
+.video-preview svg {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* Пришлось использовать calc, т.к. из фигмы иконка экспортировалась
+   * не в размерах 100*100 с отступами, как в макете, а в 75*88 ровно по границам треугольника
+   */
+  transform: translate(calc(-50% + 14px), -50%);
+}
+
+.statistics {
+  padding-bottom: 218px;
+}
+
+.statistics-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.statistics-item {
+  position: relative;
+  color: #01353E;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.statistics-item:not(:first-child) {
+  margin-left: 100px;
+}
+
+/* Абсолют необходим, чтобы четко между цифрами было расстояние 100.
+ * Если его не сделать, то текст под цифрой расширяет блок родителя и
+ * выглядит это уже немного по-другому
+ */
+
+.statistics-item span {
+  position: absolute;
+  display: block;
+  padding-top: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.blog {
+  padding-bottom: 200px;
+}
+
+.blog .title {
+  margin-bottom: 230px;
+}
+
+.blog-item {
+  position: relative;
+  padding: 315px 0 76px;
+  height: 800px;
+  background: no-repeat center / cover;
+  color: #FFFFFF;
+}
+
+.blog-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(36, 33, 33, 0.5);
+}
+
+.blog-item-title, .blog-item-text {
+  position: relative;
+  margin-left: 50%;
+}
+
+.blog-item-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.blog-item-text {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.slick-dots button {
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slick-dots .slick-active button, .slick-dots button:hover {
+  background-color: #00B2A0;
+}
+
+.team {
+  padding-bottom: 200px;
+}
+
+.team .title {
+  margin-bottom: 212px;
+}
+
+.team-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-item img {
+  margin-bottom: 25px;
+}
+
+.team-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.team-position {
+  margin-bottom: 0;
+}
+
+.plans {
+  padding: 200px 0;
+  background-color: #F8F8F8;
+}
+
+.plans .title {
+  margin-bottom: 212px;
+}
+
+.plans-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 50px 5px 45px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.plans-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.plans-benefits {
+  font-weight: 400;
+}
+
+.plans-item li {
+  margin-left: 26px;
+  margin-bottom: 20px;
+}
+
+.plans-name, .plans-price {
+  margin-left: 0;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #01353E;
+  text-align: center;
+}
+
+.plans-name {
+  margin-bottom: 62px;
+}
+
+.plans-price {
+  display: block;
+  position: relative;
+  margin: auto 0 0;
+}
+
+.plans-price span {
+  position: absolute;
+  transform: translate(5px, 8px);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.map {
+  padding: 200px 0;
+}
+
+.map-image {
+  margin: 0 auto;
+  max-width: 1474px;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.application {
+  padding-bottom: 200px;
+}
+
+.application .title {
+  margin-bottom: 245px;
+}
+
+.application-inner {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.form, .contacts {
+  width: 50%;
+}
+
+.form {
+  padding-right: 31px;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dadada;
+  padding: 0;
+  padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: inherit;
+}
+
+.form input {
+  margin-bottom: 32px;
+}
+
+.form textarea {
+  margin: 52px 0 70px;
+  min-height: 156px;
+  resize: none;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+  padding: none;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #00b2a0;
+  max-width: 260px;
+}
+
+.form button[type=submit] {
+  padding: 24px 111px;
+}
+
+.contacts {
+  padding: 50px 5px 0 50px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F8F8F8;
+}
+
+.contacts p {
+  margin-bottom: 0;
+}
+
+.contacts .contacts-break, .phone {
+  margin-bottom: 62px;
+  display: block;
+}
+
+.phone {
+  transition: color 0.2s;
+}
+
+.phone:hover {
+  color: #00B2A0;
+}
+
+.address {
+  display: block;
+  max-width: 327px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.social-media li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media a {
+  transition: color 0.2s;
+}
+
+.social-media a:hover {
+  color: #00B2A0;
+}
+
+.footer {
+  display: flex;
+  height: 200px;
+  background-color: #00B2A0;
+}
+
+.footer .logo {
+  margin: auto;
+}
+
+.footer .logo:focus {
+  outline: 2px solid #FFFFFF;
+}
+
+@media (max-width: 1176px) {
+  .achive {
+    background: none;
+    padding-bottom: 150px;
+  }
+
+  .achive-inner .title {
+    text-align: center;
+  }
+
+  .achive-inner-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .title,
+  .gallery-inner .title,
+  .blog .title,
+  .team .title,
+  .plans .title,
+  .application .title {
+    font-size: 36px;
+    margin-bottom: 2em;
+  }
+
+  .menu-inner {
+    padding: 22px 0;
+  }
+  .menu-inner .logo {
+    z-index: 2;
+    top: 0;
+  }
+  .menu-inner nav {
+    position: absolute;
+    top: -200vh;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(125, 148, 161, 0.8);
+    transition: top 0.5s;
+  }
+  .menu-inner nav.active {
+    top: 0;
+    padding-top: 62px;
+  }
+  .menu-list {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  .menu-list li {
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  .menu-list li:not(:first-child) {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .menu-list a {
+    display: block;
+    padding: 5px 0;
+  }
+
+  .menu-button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 5px 0 auto;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .menu-button path, .menu-button rect {
+    fill: #ffffff;
+  }
+
+  .header .main-title {
+    font-size: 130px;
+  }
+
+  .header .icon {
+    margin-bottom: 60px;
+  }
+  
+  .about,
+  .profit,
+  .achive,
+  .plans {
+    padding: 70px 0 60px;
+  }
+
+  .about .content p {
+    padding-right: 5%;
+  }
+
+  .profit-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .profit-item-title {
+    font-size: 20px;
+  }
+
+  .gallery-inner {
+    padding: 0 0 60px;
+  }
+
+  .video {
+    padding: 120px 0;
+  }
+
+
+  .statistics {
+    padding-bottom: 140px;
+  }
+
+  .blog {
+    padding-bottom: 100px;
+  }
+
+  .blog-item {
+    padding: 140px 0;
+    height: unset;
+  }
+
+  .blog-item-title {
+    font-size: 32px;
+  }
+
+  .team {
+    padding-bottom: 60px;
+  }
+
+  .plans-name {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .plans-item {
+    padding: 20px 5px;
+  }
+
+  .plans-item li {
+    margin-left: 5px;
+  }
+
+  .map {
+    padding: 80px 0;
+  }
+
+  .application { 
+    padding-bottom: 80px;
+  }
+
+  .application-inner {
+    margin-bottom: 100px;
+  }
+
+  .contacts {
+    padding-left: 30px;
+  }
+
+  .footer {
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title,
+  .gallery-inner .title,
+  .blog .title,
+  .team .title,
+  .plans .title,
+  .application .title {
+    font-size: 32px;
+  }
+  .title::after {
+    font-size: 0;
+  }
+
+  .menu-list li:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .menu-list a {
+    padding: 4px 0;
+  }
+
+  .button,
+  .header .info-text {
+    font-size: 20px;
+  }
+
+  .header .main-title {
+    font-size: 100px;
+  }
+
+  .header .icon {
+    margin-bottom: 30px;
+  }
+
+  .about,
+  .profit,
+  .achive,
+  .plans {
+    padding: 40px 0 30px;
+  }
+
+  .about .content p {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .profit-items {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .profit-items .profit-item {
+    margin-bottom: 40px; 
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .profit-methodology {
+    flex-direction: column;
+  }
+
+  .profit-statistics {
+    margin-bottom: 30px;
+  }
+  
+  .profit-methodology .description {
+    width: 100%;
+  }
+
+  .gallery-inner {
+    padding: 0 0 30px;
+  }
+
+  .gallery-inner .gallery-item img {
+    max-height: 200px;
+  }
+
+  .blockquote-text {
+    font-size: 30px;
+  }
+
+  .blockquote-author {
+    left: 50%;
+  }
+
+  .video {
+    padding: 100px 0;
+  }
+
+  .statistics {
+    padding-bottom: 70px;
+  }
+
+  .statistics-inner {
+    flex-wrap: wrap;
+  }
+
+  .statistics-item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .statistics-item {
+    width: 50%;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .blog {
+    padding-bottom: 60px;
+  }
+
+  .blog-item-title, .blog-item-text {
+    margin-left: 0;
+  }
+
+  .team {
+    padding-bottom: 30px;
+  }
+
+  .team-items,
+  .plans-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-item,
+  .plans-item {
+    margin-bottom: 50px;
+  }
+
+  .team-item:not(:last-child),
+  .plans-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .plans-item {
+    padding: 20px 5px;
+  }
+
+  .map {
+    padding: 50px 0;
+  }
+
+  .application { 
+    padding-bottom: 60px;
+  }
+  .application-inner {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .form {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .contacts {
+    padding: 30px;
+    margin: 0 auto;
+    width: unset;
+    min-width: 75%;
+  }
+
+  .footer {
+    height: 90px;
+  }
+}
+
+@media (max-width: 440px) {
+  .title,
+  .gallery-inner .title,
+  .blog .title,
+  .team .title,
+  .plans .title,
+  .application .title {
+    font-size: 24px;
+  }
+
+  .button,
+  .form button[type=submit] {
+    padding: 24px 10px;
+    width: 100%;
+  }
+
+  .achive {
+    padding-top: 50px;
+  }
+
+  .header .main-title {
+    font-size: 80px;
+  }
+
+  .header .info-text,
+  .profit-item-title {
+    font-size: 18px;
+  }
+
+  .percentage::before  {
+    background-position-x: right;
+  }
+
+  .second-time .percentage::before {
+    max-width: 55%;
+  }
+  
+  .have-learned .percentage::before {
+    max-width: 65%;
+  }
+  
+  .satisfied-clients .percentage::before {
+    max-width: 75%;
+  }
+
+  .gallery-inner .filter {
+    flex-direction: column;
+  }
+
+  .gallery-inner .filter-item:not(:last-child) {
+    margin: 0 0 10px;
+  }
+
+  .gallery-inner .gallery-item img {
+    max-height: 150px;
+  }
+
+  .blockquote {
+    padding-top: 50px;
+  }
+  .blockquote-text {
+    font-size: 26px;
+  }
+
+  .video {
+    padding: 60px 0;
+  }
+
+  .statistics {
+    padding-bottom: 60px;
+  }
+
+  .statistics-item {
+    width: 100%;
+  }
+
+  .blog-item-title {
+    font-size: 24px;
+  }
+
+  .application-inner {
+    margin-bottom: 50px;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .social-media li {
+    margin-bottom: 10px;
+  }
+
+  .social-media li:not(:last-child) {
+    margin-right: 0;
+  }
+}
